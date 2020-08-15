@@ -65,7 +65,7 @@
             <span
               @click="showYearPicker"
               role="button"
-              class="el-date-picker__header-label">{{ yearLabel }}</span>
+              class="el-date-picker__header-label">Fuck Year {{ yearLabel }}</span>
             <span
               @click="showMonthPicker"
               v-show="currentView === 'date'"

@@ -69,7 +69,7 @@
 
     computed: {
       startYear() {
-        return Math.floor(this.date.getFullYear() / 10) * 10;
+        return (Math.floor(this.date.getFullYear() / 10) * 10) + 543;
       }
     },
 

@@ -65,7 +65,7 @@
             <span
               @click="showYearPicker"
               role="button"
-              class="el-date-picker__header-label">Fuck Year {{ yearLabel }}</span>
+              class="el-date-picker__header-label">{{ yearLabel }}</span>
             <span
               @click="showMonthPicker"
               v-show="currentView === 'date'"
@@ -574,7 +574,7 @@
           }
           return startYear + ' - ' + (startYear + 9);
         }
-        return this.year + ' ' + yearTranslation;
+        return (this.year + 543) + ' ' + yearTranslation;
       },
 
       timeFormat() {

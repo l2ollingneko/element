@@ -568,7 +568,7 @@
       yearLabel() {
         const yearTranslation = this.t('el.datepicker.year');
         if (this.currentView === 'year') {
-          const startYear = Math.floor(this.year / 10) * 10;
+          const startYear = (Math.floor(this.year / 10) * 10) + 543;
           if (yearTranslation) {
             return startYear + ' ' + yearTranslation + ' - ' + (startYear + 9) + ' ' + yearTranslation;
           }

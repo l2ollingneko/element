@@ -93,7 +93,7 @@
         if (target.tagName === 'A') {
           if (hasClass(target.parentNode, 'disabled')) return;
           const year = target.textContent || target.innerText;
-          this.$emit('pick', Number(year));
+          this.$emit('pick', Number(year - 543));
         }
       }
     }

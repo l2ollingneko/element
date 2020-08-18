@@ -570,11 +570,12 @@
         if (this.currentView === 'year') {
           const startYear = (Math.floor(this.year / 10) * 10) + 543;
           if (yearTranslation) {
-            return startYear + ' ' + yearTranslation + ' - ' + (startYear + 9) + ' ' + yearTranslation;
+            // return startYear + ' ' + yearTranslation + ' - ' + (startYear + 9) + ' ' + yearTranslation;
+            return startYear + ' - ' + (startYear + 9);
           }
           return startYear + ' - ' + (startYear + 9);
         }
-        return (this.year + 543) + ' ' + yearTranslation;
+        return (this.year + 543);
       },
 
       timeFormat() {
